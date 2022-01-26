@@ -1,0 +1,41 @@
+* {
+    padding:0;
+    margin:0; 
+}
+
+.contenedor {
+    padding:0;
+    margin:auto;
+    width: 650px;
+    height: 550px;
+    color: white;
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    /* margin-top: 5%; */
+    background: #ef4b4c;
+    box-shadow:  1px 5px 6px #d04142,
+             1px -4px 6px #ff5556;
+}
+#player {
+    background-color: rgb(98, 214, 208);
+    border:4px dashed blue;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    position: absolute;
+    transition: all 0.3s;
+}
+#player:active {
+    background-color: rgb(255, 255, 255);
+}
+.pointer {
+    border-radius:0px;
+    height:100px;
+    margin-top: 3%;
+    margin-bottom:7px;
+    color: #fff;
+    font-size: 3rem;
+    text-align:center;
+}

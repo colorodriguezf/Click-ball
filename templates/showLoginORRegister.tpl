@@ -10,6 +10,7 @@
                            <div class="modal-body">
                             <div class="containerModal">
                                 <form  class="userycontraseña" action="verify" method="POST">
+                                <h5 class="alert-danger errorLogin">{$error}</h5>
                                         {* <h5 class="alert-danger errorLogin">{$error}</h5> *}
                                             <div class="usuario">
                                                 <h2>Usuario:</h2>
@@ -26,6 +27,9 @@
                        </div>
                    </div>
                </div>
+    {* {if $nombre_usuario && $foto_perfil}
+        <div id="registrate"><p>{$nombre_usuario}</p></div>
+    {/if} *}
     <div id="registrate" type="button" data-toggle="modal" data-target="#modalRegister"><p>REGISTRATE</p></div>
      <!-- Modal Register -->
      <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -49,7 +53,7 @@
               <div class="foto_perfil">
                   <input type="file" name="input_name" id="imageToUpload" name="foto_perfil" required>
               </div>
-              <button type="submit"class=iniciarSesion>Registrarme </button>
+              <button type="submit"class="iniciarSesion">Registrarme </button>
       </form>
               </div>
              </div>

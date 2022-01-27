@@ -171,6 +171,13 @@
     -webkit-transform:rotate(-2deg);
     transform:rotate(-2deg);
 }
+#ranking a {
+    color:orange ;
+    text-decoration:none;
+}
+#ranking a:hover {
+    color: white;
+}
 
 
 .modal-dialog {

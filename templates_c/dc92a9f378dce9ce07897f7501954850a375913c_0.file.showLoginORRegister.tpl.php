@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-01-27 16:15:10
+/* Smarty version 3.1.39, created on 2022-01-27 20:37:21
   from 'C:\xampp\htdocs\Click-ball\templates\showLoginORRegister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61f2b6fe23f238_24361761',
+  'unifunc' => 'content_61f2f471d64461_93498637',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dc92a9f378dce9ce07897f7501954850a375913c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Click-ball\\templates\\showLoginORRegister.tpl',
-      1 => 1643296507,
+      1 => 1643312238,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/usoComun/footer.tpl' => 1,
   ),
 ),false)) {
-function content_61f2b6fe23f238_24361761 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61f2f471d64461_93498637 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="fondoLoginOrRegister">
@@ -36,6 +36,8 @@ $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_
                            <div class="modal-body">
                             <div class="containerModal">
                                 <form  class="userycontraseña" action="verify" method="POST">
+                                <h5 class="alert-danger errorLogin"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+</h5>
                                                                                     <div class="usuario">
                                                 <h2>Usuario:</h2>
                                                 <input type="text" name="usuario">
@@ -51,7 +53,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_
                        </div>
                    </div>
                </div>
-    <div id="registrate" type="button" data-toggle="modal" data-target="#modalRegister"><p>REGISTRATE</p></div>
+        <div id="registrate" type="button" data-toggle="modal" data-target="#modalRegister"><p>REGISTRATE</p></div>
      <!-- Modal Register -->
      <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
      <div class="modal-dialog xl" role="document">
@@ -74,7 +76,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_
               <div class="foto_perfil">
                   <input type="file" name="input_name" id="imageToUpload" name="foto_perfil" required>
               </div>
-              <button type="submit"class=iniciarSesion>Registrarme </button>
+              <button type="submit"class="iniciarSesion">Registrarme </button>
       </form>
               </div>
              </div>

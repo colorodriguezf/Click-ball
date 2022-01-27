@@ -8,6 +8,8 @@ class UserView {
         $this->smarty = new Smarty();
     }
 
-  
+    function showLoginLocation() {
+        header("Location: " . BASE_URL . "");
+    }
    
 }

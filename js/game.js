@@ -4,6 +4,9 @@ document.getElementById("player").addEventListener("click", sumarPuntos);
 let puntos = 0;
 let tiempo= 3;
 
+const audioClick = new Audio();
+audioClick.src= "sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";
+
 function sumarPuntos() {
     puntos++;
     document.getElementById("puntos").innerHTML="Puntos: <b> "+puntos+ "</b>";
@@ -15,8 +18,7 @@ function sumarPuntos() {
     document.getElementById("player").style.marginLeft =random1 + "px";
     document.getElementById("player").style.marginTop =random2 + "px";
 }
-const audioClick = new Audio();
-audioClick.src= "sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";
+
 
 function restarTiempo() {
     tiempo--;
@@ -30,5 +32,5 @@ function restarTiempo() {
     }
 
 }
-let interval = setInterval(restarTiempo,1000);
 // setInterVal -->mala practica
+let interval = setInterval(restarTiempo,1000);

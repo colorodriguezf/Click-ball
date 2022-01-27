@@ -11,4 +11,8 @@ class GameView {
     function showGame() {
         $this->smarty->display('templates/showGame.tpl');
     }
+
+    function showLoginORRegister() {
+        $this->smarty->display('templates/showLoginORRegister.tpl');
+    }
 }

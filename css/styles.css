@@ -2,7 +2,247 @@
     padding:0;
     margin:0; 
 }
+/* LOGIN OR REGISTER */
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
+  .fondoLoginOrRegister {
+    background:orange;
+    height:100vh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+#allthethings {
+  width:0px;
+  height:0px;
+  border-left: 300px solid transparent;
+  border-right:300px solid transparent;
+  border-top: 300px solid transparent;
+  position:relative;
+  margin:auto;
+  margin-top:20%;
+  left:2px;
+   background:orange;  
+}
+
+#single {  
+  position:relative;
+  bottom:330px;
+  right:300px;
+  height:50px;
+  width:600px;
+  background:#006680;
+  text-align:center;
+  font-size:30px;
+ background-size: 1px 300%;
+ -webkit-transition:0.5s;
+  transition:0.5s;
+  color:orange;
+  font-family:shadows into light;
+  cursor:pointer;
+  margin-bottom: 30px;
+}
+
+#single:hover {
+  background:#7A0000;
+  color:white;
+  -webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+}
+
+
+
+
+#left {
+    height:100px;
+    width:600px;
+    background:orange;
+    position:absolute;
+    z-index:6;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    top:-200px;
+    right:-80px;
+}
+#right {
+    height:100px;
+    width:600px;
+    background:orange;
+    position:absolute;
+    top:-229px;
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    z-index:7;
+    left:-40px;
+}
+
+
+
+#single p {
+    position:relative;
+    top:2px;
+    right:4px;
+}
+
+#registrate {
+    height:50px;
+    width:500px;
+    background:#006680;
+    position:relative;
+    bottom:345px;
+    right:240px;
+    text-align:center;
+    font-size:30px;
+    font-family:shadows into light;
+    color:orange;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+    margin-bottom: 30px;
+    
+}
+#registrate p {
+    position:relative;
+    top:0px;
+    right:9px;
+}
+#registrate:hover {
+    background:#7A0000;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);  
+}
+
+#comoJugar {
+    height:50px;
+    width:400px;
+    background:#006680;
+    position:relative;
+    bottom:360px;
+    right:200px;
+    font-size:30px;
+    text-align:center;
+    font-family:shadows into light;
+    color:orange;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+    cursor:pointer;
+    margin-bottom: 30px;
+    
+}
+
+#comoJugar p {
+    position:relative;
+    top:0px;
+    right:4px;
+}
+#comoJugar:hover {
+    background:#7A0000;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+
+#ranking {
+    height:50px;
+    width:300px;
+    position:relative;
+    background:#006680;
+    bottom:375px;
+    font-size:30px;
+    right:150px;
+    text-align:center;
+    font-family:shadows into light;
+  color:orange;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  margin-bottom: 30px;
+  
+}
+#ranking p {
+    position:relative;
+    top:0px;
+}
+#ranking:hover {
+    background:#7A0000;
+    color:white;
+    -webkit-transform:rotate(-2deg);
+    transform:rotate(-2deg);
+}
+
+
+.modal-dialog {
+    height:90vh !important;
+}
+.modal-content {
+    display: flex !important;
+    width: 100%;
+    height:80vh !important;
+    background-color: orange;
+    border-radius:4%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&family=Sedgwick+Ave&display=swap');
+.usuario h2, .contraseña h2 {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sedgwick Ave', cursive;
+    font-weight: bold;
+}
+.usuario input, .contraseña input {
+    width:400px;
+    border-radius: 10px;
+    height:60px;
+    margin-bottom: 20px;
+}
+.userycontraseña {
+    margin-top: 15%;
+}
+.iniciarSesion {
+    border-radius: 10%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color:rgb(177, 123, 6);
+    margin-top:5%;
+    border: none;
+    width: 70%;
+    height:50px;
+    margin-left:10%;
+}
+.iniciarSesion:active {
+    background-color: rgb(114, 74, 1);
+    transform:translateY(7px);
+    box-shadow: 1px 4px rgb(114, 74, 1);
+}
+
+.formRegistro div{
+    border-radius: 10%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top:5%;
+    border: none;
+    width: 70%;
+    height:50px;
+    margin-left:10%;
+}
+.mail input, .usuario input, .nickname input, .pass input {
+    width: 400px;
+    border-radius: 10px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.foto_perfil input {
+    width: 95%;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* JUEGO */
 .contenedor {
     padding:0;
     margin:auto;
@@ -39,3 +279,4 @@
     font-size: 3rem;
     text-align:center;
 }
+/* ------------------------------------------------------------------------------------------------------- */

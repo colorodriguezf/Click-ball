@@ -16,5 +16,8 @@ class GameController {
     function showHome() {
         $this->view->showGame();
     }
+    function showLoginORRegister() {
+        $this->view->showLoginORRegister();
+    }
 
 }

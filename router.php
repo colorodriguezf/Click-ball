@@ -8,7 +8,7 @@ define("BASE_URL", 'http://'.$_SERVER["SERVER_NAME"].':'.$_SERVER["SERVER_PORT"]
 
 $router = new Router();
 
-// $router->setDefaultRoute('InstagramController','showLoginORRegister');
+$router->setDefaultRoute('GameController','showLoginORRegister');
 // $router->addRoute('login', 'GET', 'GameController', 'showLoginORRegister');
 
 // $router->addRoute('registrate', 'GET', 'UserController', 'register');

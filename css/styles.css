@@ -1,29 +1,48 @@
 * {
     padding:0;
     margin:0; 
+    background:orange;
+}
+body {
+    background:orange;
+
 }
 /* LOGIN OR REGISTER */
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
   .fondoLoginOrRegister {
-    background:orange;
     height:100vh;
     margin:0;
     display: flex;
     flex-direction: column;
 }
-
+.logoJuego {
+    font-size: 7.5rem;
+    text-align: center;
+    margin-top: 2%;
+    color: #fffefd;
+    background:orange;  
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #e7371c, 
+              10px 10px 0px #efa032, 
+              15px 15px 0px #46b59b, 
+              20px 20px 0px #017e7f, 
+              25px 25px 0px #052939, 
+              30px 30px 0px #c11a2b, 
+              35px 35px 0px #c11a2b, 
+              40px 40px 0px #c11a2b, 
+              45px 45px 0px #c11a2b;
+}
 #allthethings {
   width:0px;
   height:0px;
   border-left: 300px solid transparent;
   border-right:300px solid transparent;
   border-top: 300px solid transparent;
-  position:relative;
   margin:auto;
-  margin-top:20%;
-  left:2px;
-   background:orange;  
+  margin-top:7%;
+  background:orange;  
 }
 
 #single {  
@@ -50,33 +69,6 @@
   -webkit-transform:rotate(-1deg);
   transform:rotate(-2deg);
 }
-
-
-
-
-#left {
-    height:100px;
-    width:600px;
-    background:orange;
-    position:absolute;
-    z-index:6;
-    -webkit-transform:rotate(45deg);
-    transform:rotate(45deg);
-    top:-200px;
-    right:-80px;
-}
-#right {
-    height:100px;
-    width:600px;
-    background:orange;
-    position:absolute;
-    top:-229px;
-    -webkit-transform:rotate(-45deg);
-    transform:rotate(-45deg);
-    z-index:7;
-    left:-40px;
-}
-
 
 
 #single p {
@@ -247,6 +239,86 @@
 .foto_perfil input {
     width: 95%;
 }
+.bola{
+    position: absolute;
+    background-color:white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 6px black  ,
+                 -2px -2px 26px black inset;
+
+    animation: rebote 20s   infinite  ;   
+}
+    
+    @keyframes rebote{
+        0%{
+            transform:translate(0px, 400px);
+        }
+        10%{
+            transform:translate(400px, 600px);
+            background-color: yellow;
+        }
+        20%{
+            transform:translate(300px, 200px);
+            background: green;
+        }
+        30%{
+            transform:translate(1100px, 500px);
+            background: grey;
+        }
+        40%{
+            transform:translate(0px, 600px);
+            background: maroon;
+        }
+        50%{
+            transform:translate(1200px, 0px);
+            background: orange;
+        }
+        60%{
+            transform:translate(600px, 600px);
+            background-color: pink;
+        }
+        70%{
+            transform:translate(200px, 0px);
+            background-color: purple;
+        }
+        80%{
+            transform:translate(200px, 600px);
+            background-color: springgreen;
+        }
+        90%{
+            transform:translate(0px, 400px);
+            background: seashell;
+        }
+        100%{
+            transform:translate(450px, 600px);  
+        }
+        
+}
+/* NAV HOME */
+
+nav div img {
+    width: 100%;
+    border-radius:50%
+}
+.fotoNav {
+    width: 5%;
+}
+nav div p {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #940000;
+}
+nav {
+    margin-top: 15px;
+    display:flex;
+    justify-content: flex-end;
+}
+nav div {
+    width: 250px;
+    margin-left: 30px;
+}
 
 /* --------------------------------------------------------------------------------------- */
 /* JUEGO */
@@ -276,6 +348,9 @@
 }
 #player:active {
     background-color: rgb(255, 255, 255);
+}
+#puntos, #tiempo, b {
+    background: #ef4b4c;
 }
 .pointer {
     border-radius:0px;

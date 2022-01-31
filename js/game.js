@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",restarTiempo);
 document.getElementById("player").addEventListener("click", sumarPuntos);
 let puntos = 0;
-let tiempo= 3;
+let tiempo= 60;
 
 const audioClick = new Audio();
 audioClick.src= "sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";

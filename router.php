@@ -9,12 +9,9 @@ define("BASE_URL", 'http://'.$_SERVER["SERVER_NAME"].':'.$_SERVER["SERVER_PORT"]
 $router = new Router();
 
 $router->setDefaultRoute('GameController','showLoginORRegister');
+
 $router->addRoute('home', 'GET', 'GameController', 'showHome');
-$router->addRoute('play', 'GET', 'GameController', 'showGome');
-
-// $router->addRoute('login', 'GET', 'UserController', 'UserRegister');
-
-// $router->addRoute('login', 'GET', 'GameController', 'showLoginORRegister');
+$router->addRoute('play', 'GET', 'GameController', 'showGame');
 
 $router->addRoute('login', 'POST', 'UserController', 'userRegister');
 $router->addRoute('verify', 'POST', 'UserController', 'verifyLogin');

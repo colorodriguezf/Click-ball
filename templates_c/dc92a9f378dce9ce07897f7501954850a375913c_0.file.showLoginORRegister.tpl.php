@@ -1,58 +1,63 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-01-27 20:37:21
+/* Smarty version 3.1.39, created on 2022-01-31 15:01:50
   from 'C:\xampp\htdocs\Click-ball\templates\showLoginORRegister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61f2f471d64461_93498637',
+  'unifunc' => 'content_61f7ebce03dd17_06218051',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dc92a9f378dce9ce07897f7501954850a375913c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Click-ball\\templates\\showLoginORRegister.tpl',
-      1 => 1643312238,
+      1 => 1643637708,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/usoComun/header.tpl' => 1,
+    'file:templates/usoComun/logo.tpl' => 1,
     'file:templates/usoComun/footer.tpl' => 1,
   ),
 ),false)) {
-function content_61f2f471d64461_93498637 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61f7ebce03dd17_06218051 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="fondoLoginOrRegister">
-    <div id="allthethings">
-    <div id="left"></div>
-        <div id="single" type="button" data-toggle="modal" data-target="#modalLogin"><p>INICIAR SESION</p></div>
-                   <!-- Modal Login -->
-                   <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                   <div class="modal-dialog xl" role="document">
-                       <div class="modal-content">
-                           <div class="modal-body">
-                            <div class="containerModal">
-                                <form  class="userycontraseña" action="verify" method="POST">
-                                <h5 class="alert-danger errorLogin"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+
+    <div class="bola"></div>
+    
+    <?php $_smarty_tpl->_subTemplateRender('file:templates/usoComun/logo.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+        <div id="allthethings">
+            <div id="single" type="button" data-toggle="modal" data-target="#modalLogin"><p>INICIAR SESION</p></div>
+                    <!-- Modal Login -->
+                    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="containerModal">
+                                    <form  class="userycontraseña" action="verify" method="POST">
+                                    <h5 class="alert-danger errorLogin"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 </h5>
-                                                                                    <div class="usuario">
-                                                <h2>Usuario:</h2>
-                                                <input type="text" name="usuario">
-                                            </div>
-                                            <div class="contraseña">
-                                                <h2>Contraseña:</h2>
-                                                <input type="password" name="password">
-                                            </div>
-                                        <button class=iniciarSesion>Iniciar sesion </button>
-                                </form>
+                                                                                            <div class="usuario">
+                                                    <h2>Usuario:</h2>
+                                                    <input type="text" name="usuario">
+                                                </div>
+                                                <div class="contraseña">
+                                                    <h2>Contraseña:</h2>
+                                                    <input type="password" name="password">
+                                                </div>
+                                            <button class=iniciarSesion>Iniciar sesion </button>
+                                    </form>
+                                </div>
                             </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+                        </div>
+                    </div>
+                </div>
         <div id="registrate" type="button" data-toggle="modal" data-target="#modalRegister"><p>REGISTRATE</p></div>
      <!-- Modal Register -->
      <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -85,8 +90,6 @@ $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_
  </div>
     <div id="comoJugar"><p>¿COMO SE JUEGA?</p></div>
     <div id="ranking"><p>RANKING 🏆</p></div>
-    <div id="right"></div>
-    <div id="left"></div>
     </div>
 </div>
 

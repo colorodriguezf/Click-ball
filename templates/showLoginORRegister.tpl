@@ -1,32 +1,35 @@
 {include file='templates/usoComun/header.tpl'}
 <div class="fondoLoginOrRegister">
-    <div id="allthethings">
-    <div id="left"></div>
-        <div id="single" type="button" data-toggle="modal" data-target="#modalLogin"><p>INICIAR SESION</p></div>
-                   <!-- Modal Login -->
-                   <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                   <div class="modal-dialog xl" role="document">
-                       <div class="modal-content">
-                           <div class="modal-body">
-                            <div class="containerModal">
-                                <form  class="userycontraseña" action="verify" method="POST">
-                                <h5 class="alert-danger errorLogin">{$error}</h5>
-                                        {* <h5 class="alert-danger errorLogin">{$error}</h5> *}
-                                            <div class="usuario">
-                                                <h2>Usuario:</h2>
-                                                <input type="text" name="usuario">
-                                            </div>
-                                            <div class="contraseña">
-                                                <h2>Contraseña:</h2>
-                                                <input type="password" name="password">
-                                            </div>
-                                        <button class=iniciarSesion>Iniciar sesion </button>
-                                </form>
+
+    <div class="bola"></div>
+    
+    {include file='templates/usoComun/logo.tpl'}
+        <div id="allthethings">
+            <div id="single" type="button" data-toggle="modal" data-target="#modalLogin"><p>INICIAR SESION</p></div>
+                    <!-- Modal Login -->
+                    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="containerModal">
+                                    <form  class="userycontraseña" action="verify" method="POST">
+                                    <h5 class="alert-danger errorLogin">{$error}</h5>
+                                            {* <h5 class="alert-danger errorLogin">{$error}</h5> *}
+                                                <div class="usuario">
+                                                    <h2>Usuario:</h2>
+                                                    <input type="text" name="usuario">
+                                                </div>
+                                                <div class="contraseña">
+                                                    <h2>Contraseña:</h2>
+                                                    <input type="password" name="password">
+                                                </div>
+                                            <button class=iniciarSesion>Iniciar sesion </button>
+                                    </form>
+                                </div>
                             </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+                        </div>
+                    </div>
+                </div>
     {* {if $nombre_usuario && $foto_perfil}
         <div id="registrate"><p>{$nombre_usuario}</p></div>
     {/if} *}
@@ -62,8 +65,6 @@
  </div>
     <div id="comoJugar"><p>¿COMO SE JUEGA?</p></div>
     <div id="ranking"><p>RANKING 🏆</p></div>
-    <div id="right"></div>
-    <div id="left"></div>
     </div>
 </div>
 

@@ -7,7 +7,7 @@ class ApiModel  {
     }
 
 function insertarPuntaje($usuario, $puntos) {
-    $sentencia = $this->db->prepare("INSERT INTO puntaje (usuario_fk, puntos) VALUES(?,?)");
+    $sentencia = $this->db->prepare("INSERT INTO puntaje(usuario_fk, puntos) VALUES(?,?)");
     $sentencia->execute(array($usuario, $puntos));
     return $this->db->lastInsertId();
 }

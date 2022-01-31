@@ -10,7 +10,7 @@
     {include file='templates/usoComun/logo.tpl'}
         <div id="allthethings">
             <div id="left"></div>
-                <div id="single"><p>JUGAR</p></div>
+               <div id="single"> <a href="play"><p>JUGAR</p></div></a>
             <div id="registrate"><p>¿COMO SE JUEGA?</p></div>
             
             <div id="comoJugar"><p>RANKING 🏆</p></div>

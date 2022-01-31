@@ -8,7 +8,8 @@ class GameView {
         $this->smarty = new Smarty();
     }
 
-    function showGame() {
+    function showGame($nombre_usuario="") {
+        $this->smarty->assign('nombre_usuario', $nombre_usuario);
         $this->smarty->display('templates/showGame.tpl');
     }
     function showHome($foto_perfil="", $nombre_usuario="") {

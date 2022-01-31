@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-01-31 15:01:50
+/* Smarty version 3.1.39, created on 2022-01-31 19:18:28
   from 'C:\xampp\htdocs\Click-ball\templates\showLoginORRegister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_61f7ebce03dd17_06218051',
+  'unifunc' => 'content_61f827f4464218_80289667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dc92a9f378dce9ce07897f7501954850a375913c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Click-ball\\templates\\showLoginORRegister.tpl',
-      1 => 1643637708,
+      1 => 1643653075,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/usoComun/footer.tpl' => 1,
   ),
 ),false)) {
-function content_61f7ebce03dd17_06218051 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61f827f4464218_80289667 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="fondoLoginOrRegister">
@@ -88,7 +88,22 @@ $_smarty_tpl->_subTemplateRender('file:templates/usoComun/header.tpl', $_smarty_
          </div>
      </div>
  </div>
-    <div id="comoJugar"><p>¿COMO SE JUEGA?</p></div>
+    <div id="comoJugar" type="button" data-toggle="modal" data-target="#modalComoJugar"><p>¿COMO SE JUEGA?</p></div>
+           <!-- Modal COMO SE JUEGA ? -->
+           <div class="modal fade" id="modalComoJugar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+           <div class="modal-dialog xl" role="document">
+               <div class="modal-content">
+                   <div class="modal-body">
+                       <div class="containerModal">
+                             <h1>¿Como se juega?</h1>
+                              <p class="pReglas">El jugador tendra 60 segundos para clickear en la bola la mayor cantidad de veces que sea posible,
+                              cada vez que se clickee la misma, esta se movera aleatoreamente dentro del rectangulo de juego.</p>        
+                        </div>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
     <div id="ranking"><p>RANKING 🏆</p></div>
     </div>
 </div>

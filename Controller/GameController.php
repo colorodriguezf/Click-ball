@@ -26,7 +26,13 @@ class GameController {
     }
 
     function showGame() {
-        $this->view->showGame();
+        $logueado = $this->authHelper->checkLogedIn();
+        if($logueado) {
+        $this->view->showGame($_SESSION['nombre_usuario']);
+        }
+        else {
+            $this->view->showLoginLocation();
+        }
     }
     function showLoginORRegister() {
         $this->view->showLoginORRegister();

@@ -1,7 +1,6 @@
 * {
     padding:0;
     margin:0; 
-    background:orange;
 }
 body {
     background:orange;
@@ -62,12 +61,17 @@ body {
   cursor:pointer;
   margin-bottom: 30px;
 }
+#single a {
+    color:orange;
+    text-decoration: none;
+}
 
 #single:hover {
   background:#7A0000;
   color:white;
   -webkit-transform:rotate(-1deg);
   transform:rotate(-2deg);
+  text-decoration: none;
 }
 
 
@@ -134,6 +138,16 @@ body {
     color:white;
     -webkit-transform:rotate(-2deg);
     transform:rotate(-2deg);
+}
+.containerModal h1 {
+    color:white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align:center;
+}
+.containerModal .pReglas {
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
 }
 
 #ranking {
@@ -360,5 +374,9 @@ nav div {
     color: #fff;
     font-size: 3rem;
     text-align:center;
+}
+
+.modalPuntos {
+    display: flex !important;
 }
 /* ------------------------------------------------------------------------------------------------------- */

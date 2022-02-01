@@ -18,24 +18,26 @@ class GameController {
     function showHome() {
         $logueado = $this->authHelper->checkLogedIn();
         if($logueado) {
-            $this->view->showHome($_SESSION['foto_perfil'], $_SESSION['nombre_usuario']);
+            $top100= $this->model->getTop100();
+            $this->view->showHome($_SESSION['foto_perfil'], $_SESSION['nombre_usuario'], $top100);
         }
         else {
             $this->view->showLoginLocation();
         }
     }
-
+    
     function showGame() {
         $logueado = $this->authHelper->checkLogedIn();
         if($logueado) {
-        $this->view->showGame($_SESSION['nombre_usuario']);
+            $this->view->showGame($_SESSION['nombre_usuario']);
         }
         else {
             $this->view->showLoginLocation();
         }
     }
     function showLoginORRegister() {
-        $this->view->showLoginORRegister();
+        $top100= $this->model->getTop100();
+        $this->view->showLoginORRegister($top100);
     }
 
 }

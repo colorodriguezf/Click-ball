@@ -12,14 +12,16 @@ class GameView {
         $this->smarty->assign('nombre_usuario', $nombre_usuario);
         $this->smarty->display('templates/showGame.tpl');
     }
-    function showHome($foto_perfil="", $nombre_usuario="") {
+    function showHome($foto_perfil="", $nombre_usuario="", $top100) {
         $this->smarty->assign('foto_perfil', $foto_perfil);
         $this->smarty->assign('nombre_usuario', $nombre_usuario);
+        $this->smarty->assign('top100', $top100);
         $this->smarty->display('templates/home.tpl');
     }
 
-    function showLoginORRegister($error ="") {
-        $this->smarty->assign('error', $error);
+    function showLoginORRegister($top100) {
+        // $this->smarty->assign('error', $error);
+        $this->smarty->assign('top100', $top100);
         $this->smarty->display('templates/showLoginORRegister.tpl');
     }
      function showLoginLocation() {

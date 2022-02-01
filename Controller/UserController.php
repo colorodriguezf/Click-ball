@@ -57,7 +57,7 @@ class UserController {
       function logout() {
         session_start();
         session_destroy();
-        $this->gameView->showLoginORRegister();
+        $this->gameView->showLoginLocation();
       }
       
     }

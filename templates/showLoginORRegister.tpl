@@ -13,8 +13,7 @@
                             <div class="modal-body">
                                 <div class="containerModal">
                                     <form  class="userycontraseña" action="verify" method="POST">
-                                    <h5 class="alert-danger errorLogin">{$error}</h5>
-                                            {* <h5 class="alert-danger errorLogin">{$error}</h5> *}
+                                    {* <h5 class="alert-danger errorLogin">{$error}</h5> *}
                                                 <div class="usuario">
                                                     <h2>Usuario:</h2>
                                                     <input type="text" name="usuario">
@@ -79,7 +78,36 @@
                    </div>
                </div>
            </div>
-    <div id="ranking"><p>RANKING 🏆</p></div>
+    <div id="ranking" type="button" data-toggle="modal" data-target="#modalRanking"><p>RANKING 🏆</p></div>
+    <!-- Modal RANKING -->
+    <div class="modal fade" id="modalRanking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog xl" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="containerModal">
+                      <h1>TOP 100👑</h1>
+                       <table>
+                            <thead>
+                                <tr>
+                                    <th>USUARIO</th>
+                                    <th>PUNTOS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {foreach from=$top100 item=$usuario}
+                                <tr>
+                                    <td class="topUsuario">{$usuario->usuario_fk}</td>
+                                    <td class="topPuntos">{$usuario->puntos}</td>
+                                <tr>
+                            {/foreach}
+                            </tbody>
+                     </table>      
+                 </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
 

@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",restarTiempo);
 document.getElementById("player").addEventListener("click", sumarPuntos);
 let puntos = 0;
-let tiempo= 10;
+let tiempo= 60;
 
 const audioClick = new Audio();
 audioClick.src= "sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";
@@ -11,6 +11,13 @@ function sumarPuntos() {
     puntos++;
     document.getElementById("puntos").innerHTML="Puntos: <b> "+puntos+ "</b>";
     document.getElementById("puntosTotales").innerHTML=puntos;
+    let colores =['#4357AD','#48a9a6','#c1666b','#8eecf5','#e63946','#03071e','#560bad','#ff0054', '#ff35c2','#e4fff9','#f4ff91',
+                        '#BDC3C7', '#5499C7', '#9C640C'];
+    let colorRandom = Math.round(Math.random()*colores.length);
+    let randomColor= colores[colorRandom];
+    console.log(randomColor);
+        
+
     
     let random1 = Math.round(Math.random()*600);
     let random2 = Math.round(Math.random()*520);
@@ -18,6 +25,8 @@ function sumarPuntos() {
     console.log(random2);
     document.getElementById("player").style.marginLeft =random1 + "px";
     document.getElementById("player").style.marginTop =random2 + "px";
+    let a=document.getElementById("player").style.backgroundColor=randomColor;
+    console.log(a);
 }
 
 

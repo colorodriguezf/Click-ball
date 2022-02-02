@@ -209,7 +209,12 @@ tr {
     color:rgb(216, 96, 96);
 }
 .modal-body {
+    /* hace que el contenido no colapse fuera del modal, y le agrega un scroll */
     overflow-y: auto !important;
+}
+.modal-body::-webkit-scrollbar {
+    /* hace que el scroll que se agrego no se vea */
+    display:none
 }
 
 
@@ -363,6 +368,23 @@ nav div {
 
 /* --------------------------------------------------------------------------------------- */
 /* JUEGO */
+.botonesGame {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+}
+.botonesGame button {
+    border:none;
+    margin:50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    background: none;
+}
+.botonesGame a button svg {
+    color:rgb(15, 92, 0);
+}
+
 .contenedor {
     padding:0;
     margin:auto;
@@ -403,7 +425,45 @@ nav div {
     text-align:center;
 }
 
-.modalPuntos {
-    display: flex !important;
+#modalPuntos {
+    display: none;
+    margin-top: -47%;
+    height:450px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&family=Sedgwick+Ave&display=swap');
+.gameOver {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sedgwick Ave', cursive;
+    font-weight: 800;
+    color: rgb(235, 232, 232);
+    font-size: 4rem;
+    margin-top: 50px;
+}
+.modal-body form, .modal-body form h3 {
+    font-size: 3rem;
+    margin-top: 10%;
+    border-bottom: none !important;
+}
+.modal-body form p {
+    font-size:2.5rem;
+}
+.modal-headerGame {
+    border-bottom: 5px solid rgb(235, 235, 235) !important;
+}
+.modal-footerGame {
+    border-top:none;
+}
+#btn-enviarPuntos {
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    width:450px;
+    height:60px;
+}
+#puntosTotales {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
 }
 /* ------------------------------------------------------------------------------------------------------- */

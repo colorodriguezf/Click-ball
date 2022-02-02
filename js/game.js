@@ -5,7 +5,8 @@ let puntos = 0;
 let tiempo= 60;
 
 const audioClick = new Audio();
-audioClick.src= "sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";
+audioClick.src= "/sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";
+console.log(audioClick);
 
 function sumarPuntos() {
     puntos++;
@@ -38,6 +39,7 @@ function restarTiempo() {
         tiempo = 0;
         clearInterval(interval);
         document.getElementById("player").style.display="none";
+        document.getElementById("modalPuntos").style.display="flex";
     }
 
 }
@@ -70,4 +72,5 @@ async function enviarPuntos() {
     catch (e) {
         consol.log(e);
     }
+    document.getElementById("modalPuntos").style.display="none";
 }

@@ -3,7 +3,7 @@ let btn_jguar =document.getElementById("btn-jugar");
 btn_jguar.addEventListener("click",jugar);
 document.getElementById("player").addEventListener("click", sumarPuntos);
 let puntos = 0;
-let tiempo= 8;
+let tiempo= 60;
 const puntuacion = document.getElementById("puntos");
 const puntosTotales = document.getElementById("puntosTotales");
 const audioClick = new Audio();
@@ -40,7 +40,7 @@ function jugar() {
     puntosTotales.innerHTML = 0;
     puntuacion.innerHTML = "Puntos:"+ 0;
     puntos = 0;
-    tiempo = 8;
+    tiempo = 60;
     restarTiempo();
     interval = setInterval(restarTiempo,1000);
 }

@@ -6,32 +6,24 @@ body {
     background:orange;
 
 }
-/* LOGIN OR REGISTER */
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
-  .fondoLoginOrRegister {
-    height:100vh;
-    margin:0;
-    display: flex;
-    flex-direction: column;
-}
 .logoJuego {
-    font-size: 7.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: 2%;
     color: #fffefd;
     background:orange;  
     font-family: 'Niconne', cursive;
     font-weight: 700;
-    text-shadow: 5px 5px 0px #e7371c, 
-              10px 10px 0px #efa032, 
-              15px 15px 0px #46b59b, 
-              20px 20px 0px #017e7f, 
-              25px 25px 0px #052939, 
-              30px 30px 0px #c11a2b, 
-              35px 35px 0px #c11a2b, 
-              40px 40px 0px #c11a2b, 
-              45px 45px 0px #c11a2b;
+    text-shadow: 2px 2px 0px #e7371c, 
+              2px 3px 0px #efa032, 
+             4px 4px 0px #46b59b, 
+              5px 5px 0px #017e7f, 
+              6px 6px 0px #052939, 
+              7px 7px 0px #c11a2b, 
+              8px 8px 0px #c11a2b, 
+              9px 9px 0px #c11a2b, 
+              10px 10px 0px #c11a2b;
 }
 #allthethings {
   width:0px;
@@ -81,7 +73,7 @@ body {
     right:4px;
 }
 
-#registrate {
+#menu {
     height:50px;
     width:500px;
     background:#006680;
@@ -98,12 +90,12 @@ body {
     margin-bottom: 30px;
     
 }
-#registrate p {
+#menu p {
     position:relative;
     top:0px;
     right:9px;
 }
-#registrate:hover {
+#menu:hover {
     background:#7A0000;
     color:white;
     -webkit-transform:rotate(-2deg);
@@ -142,149 +134,59 @@ body {
 .containerModal h1 {
     color:white;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align:center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&family=Sedgwick+Ave&display=swap');
+/* Estilos para el contenido del modal */
 .containerModal .pReglas {
-    color:rgb(255, 255, 255);
-    font-size: 2rem;
-    font-family: 'Anton', sans-serif !important;
-font-family: 'Montserrat', sans-serif !important;
-font-family: 'Sedgwick Ave', cursive !important;
-}
-
-#ranking {
-    height:50px;
-    width:300px;
-    position:relative;
-    background:#006680;
-    bottom:375px;
-    font-size:30px;
-    right:150px;
-    text-align:center;
-    font-family:shadows into light;
-  color:orange;
-  -webkit-transition:0.5s;
-  transition:0.5s;
-  cursor:pointer;
-  margin-bottom: 30px; 
-}
-#ranking p {
-    position:relative;
-    top:0px;
-}
-#ranking:hover {
-    background:#7A0000;
-    color:white;
-    -webkit-transform:rotate(-2deg);
-    transform:rotate(-2deg);
-}
-#ranking a {
-    color:orange ;
-    text-decoration:none;
-}
-#ranking a:hover {
-    color: white;
-}
-table {
-    margin-left: 40px;
-}
-tr {
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
-    margin-top: 25px;
-    color:white;
+    font-family: 'Anton', sans-serif;
 }
 
-.topUsuario {
-    margin-top: 4px;
-    color:#af0c0c;
-    text-transform: uppercase;
+.containerModal .pReglas {
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Sedgwick Ave', cursive !important;
 }
-.topPuntos {
-    margin-left: 30px;
-    text-align: center;
-    font-size:2rem;
-    font-weight: bold;
-    color:rgb(216, 96, 96);
-}
+
 .modal-body {
-    /* hace que el contenido no colapse fuera del modal, y le agrega un scroll */
-    overflow-y: auto !important;
-}
-.modal-body::-webkit-scrollbar {
-    /* hace que el scroll que se agrego no se vea */
-    display:none
+    overflow-y: auto;
 }
 
+.modal-body::-webkit-scrollbar {
+    width: 0;
+}
 
 .modal-dialog {
-    height:90vh !important;
-}
-.modal-content {
-    display: flex !important;
-    width: 100%;
-    height:80vh !important;
-    background-color: orange;
-    border-radius:4%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&family=Sedgwick+Ave&display=swap');
-.usuario h2, .contraseña h2 {
-    margin-bottom: 30px;
-    color: rgb(255, 255, 255);
-    font-size: 3.5rem;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Sedgwick Ave', cursive;
-    font-weight: bold;
-}
-.usuario input, .contraseña input {
-    width:400px;
-    border-radius: 10px;
-    height:60px;
-    margin-bottom: 20px;
-}
-.userycontraseña {
-    margin-top: 15%;
-}
-.iniciarSesion {
-    border-radius: 10%;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color:rgb(177, 123, 6);
-    margin-top:5%;
-    border: none;
-    width: 70%;
-    height:50px;
-    margin-left:10%;
-}
-.iniciarSesion:active {
-    background-color: rgb(114, 74, 1);
-    transform:translateY(7px);
-    box-shadow: 1px 4px rgb(114, 74, 1);
+    top: 20%;
 }
 
-.formRegistro div{
-    border-radius: 10%;
+.modal-content {
+    background-color: orange;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 40vh;
+}
+
+.modal-headerGame {
+    background-color: #f44336;
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top:5%;
-    border: none;
-    width: 70%;
-    height:50px;
-    margin-left:10%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px; 
 }
-.mail input, .usuario input, .nickname input, .pass input {
-    width: 400px;
-    border-radius: 10px;
-    height: 60px;
-    margin-bottom: 20px;
+
+.modal-title.gameOver {
+    margin: 0;
+    font-size: 2rem;
 }
-.foto_perfil input {
-    width: 95%;
+
+.modal-footerGame {
+    text-align: center;
+    padding-top: 20px;
 }
+
+
 .bola{
     position: absolute;
     background-color:white;
@@ -342,54 +244,41 @@ tr {
         }
         
 }
-/* NAV HOME */
-
-nav div img {
-    width: 100%;
-    border-radius:50%
-}
-.fotoNav {
-    width: 5%;
-}
-nav div p {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #940000;
-}
-nav {
-    margin-top: 15px;
-    display:flex;
-    justify-content: flex-end;
-}
-nav div {
-    width: 250px;
-    margin-left: 30px;
-}
-
 /* --------------------------------------------------------------------------------------- */
 /* JUEGO */
 .botonesGame {
-    width: 20%;
-    position: absolute;
-    top: 20%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem
 }
 .botonesGame button {
     border:none;
-    margin:50px;
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: .5rem;
     background: none;
 }
 .botonesGame a button svg {
     color:rgb(15, 92, 0);
+    width: 3rem;
+}
+.btn-jugar {
+    width:20px;
+}
+
+.contenedor-juego {
+    width: 90%;
+    margin: auto;
+}
+.juego {
+    width: 100%;
+    padding:10px;
 }
 
 .contenedor {
-    padding:0;
-    margin:auto;
-    width: 650px;
-    height: 550px;
+    width: 100%;
+    height: 500px;
     color: white;
     border-radius: 25px;
     border-top-right-radius: 0px;
@@ -401,8 +290,8 @@ nav div {
 }
 #player {
     position: absolute;
-    width:50px;
-    height:50px;
+    width:30px;
+    height:30px;
     border-radius:50%;
     cursor:pointer;
     transition: all 0.2s;
@@ -416,20 +305,52 @@ nav div {
     background: #ef4b4c;
 }
 .pointer {
+    display: flex;
+    justify-content: space-around;
     border-radius:0px;
-    height:100px;
-    margin-top: 3%;
+    width: 100%;
+    height:60px;
+    margin-top: 4%;
     margin-bottom:7px;
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.2rem;
     text-align:center;
 }
 
 #modalPuntos {
-    display: none;
-    margin-top: -47%;
-    height:450px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
 }
+
+.play-restart-span {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ff4f4f;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: auto;
+  }
+  
+  .play-restart-span:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #btn-jugar {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #btn-jugar:focus {
+    outline: none;
+  }
+  
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600&family=Sedgwick+Ave&display=swap');
 .gameOver {
     font-family: 'Anton', sans-serif;
@@ -441,12 +362,11 @@ nav div {
     margin-top: 50px;
 }
 .modal-body form, .modal-body form h3 {
-    font-size: 3rem;
     margin-top: 10%;
     border-bottom: none !important;
 }
 .modal-body form p {
-    font-size:2.5rem;
+    font-size:1.5rem;
 }
 .modal-headerGame {
     border-bottom: 5px solid rgb(235, 235, 235) !important;
@@ -462,8 +382,47 @@ nav div {
     height:60px;
 }
 #puntosTotales {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: bold;
 }
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  
 /* ------------------------------------------------------------------------------------------------------- */
+
+
+
+@media only screen and (min-width: 600px) {
+    .contenedor-juego {
+        width: 80%;
+    }
+    #player {
+        width:40px;
+        height:40px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .contenedor-juego {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contenedor-juego {
+        width: 40%;
+    }
+    .pointer {
+        font-size: 1.4rem;
+    }
+}
